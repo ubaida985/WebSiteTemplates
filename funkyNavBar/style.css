@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Patrick+Hand&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #666666;
+    --light: #DDDDDD;
+    --themePink: #FFB6C1;
+        
+    --caveat: 'Caveat', cursive;
+    --hand: 'Patrick Hand', cursive;
+}
+body{
+    background-color: var(--light);
+}
+header{
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 14vh;
+    align-items: center;
+    padding: 0 2rem;
+}
+header #logo{
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: var(--caveat);
+    padding-left: 4rem;
+}
+header a{
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 1.2rem;
+    transition: color 0.4s;
+}
+header li:hover{
+    border-top: 4px solid var(--black);
+}
+
+header li:hover a{
+    color: var(--black);
+}
+header ul{
+    list-style: none;
+}
+header li{
+    display: inline-block;
+    cursor: pointer;
+    padding: 1rem;
+    border-top: 3px solid transparent;
+}
+header nav{
+    text-align: right;
+}
+
+section{
+    height: 86vh;
+    width: 100%;
+}
+#home{
+    background-color: var(--themePink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home .heading{
+    position: relative;
+}
+#home .heading p{
+    font-size: 10rem;
+    font-family: var(--hand);
+    letter-spacing: 1rem;
+}
+#home .heading span{
+    font-size: 1.3rem;
+    font-family: initial;
+    position: absolute;
+    letter-spacing: 0;
+}
+section  span.above{
+    top: 2rem;
+    left: -2rem;
+}
+section span.below{
+    font-size: 1rem;
+    bottom: 1rem;
+    right: -4rem;
+}
