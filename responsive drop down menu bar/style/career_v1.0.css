@@ -1,0 +1,178 @@
+@font-face {
+  font-family: Neogrotesk Ess Alt;
+  src: url("../font/NeogroteskEssAlt-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: Boston-SemiBold;
+  src: url("../font/Boston-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: Neogrotesk Ess Alt Bold;
+  src: url("../font/NeogroteskEssAlt-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: Boston-Regular;
+  src: url("../font/Boston-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: Neogrotesk Ess Alt Light;
+  src: url("../font/NeogroteskEssAlt-Light.woff") format("woff");
+}
+@font-face {
+  font-family: Boston-Bold;
+  src: url("../font/Boston-Bold.woff");
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section h1.sectionHeading{
+margin-left: 10%;
+color: #043b81;
+font-family: Neogrotesk Ess Alt Bold;;
+font-size: 2rem;
+margin-bottom: -100px;
+margin-top: 50px;
+}
+.careerContainer{
+width: 70%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 3rem;
+margin: 8rem auto 3rem auto;
+}
+.careerContainer .career{
+padding: 1rem;
+display: flex;
+flex-direction: column;
+max-width: 300px;
+height: 250px;
+}
+.careerContainer .job{
+color: #043b81;
+}
+.careerContainer .job h1{
+font-family: Neogrotesk Ess Alt;
+}
+.careerContainer .job p{
+font-family: Neogrotesk Ess Alt Light;
+padding: 0.5rem 0;
+}
+.careerContainer .button{
+cursor: pointer;
+border: 3px solid #ffe194;
+background-color: white;
+border-radius: 10px;
+transition: all 0.4s;
+width: 100%;
+text-align: center;
+margin-top: auto;
+padding: 1rem;
+}
+.careerContainer .button a{
+display: block;
+margin-top: auto;
+font-size: 0.9rem;
+text-decoration: none;
+font-family: Neogrotesk Ess Alt Light;
+color: black;
+}
+.careerContainer .button:hover {
+background-color: #ffe194;
+}
+
+
+.careerContainer .first {
+max-width: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr;
+height: unset;
+}
+.careerContainer .first {
+grid-column: 1/4;
+}
+.careerContainer .first .job h1 {
+font-size: 2.5rem;
+padding: 1rem 0;
+padding-right: 2rem;
+margin: auto;
+margin-bottom: 2rem;
+height: unset;
+}
+.careerContainer .first .job{
+margin: auto;
+}
+.careerContainer .first h1{
+margin: auto;
+}
+.careerContainer .first .imgContainer {
+border-radius: 10px;
+width: 100%;
+}
+.careerContainer .first .imgContainer img{
+width: 100%;
+}
+
+@media screen and (max-width:1050px) {
+.careerContainer {
+  grid-template-columns: 1fr 1fr;
+}
+.careerContainer .career{
+  width: 100%;  
+}
+.first {
+  grid-column: 1/3;
+}
+}
+
+@media screen and (max-width:720px) {
+.careerContainer {
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+.careerContainer .first {
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  grid-column: 1/2;
+  padding: 0;
+  margin: 0%;
+}
+.careerContainer .first .job{
+  grid-row: 2;
+  margin-top: -100px;
+  margin-left: 20px;
+}
+.careerContainer .first .imgContainer{
+  grid-row: 1;
+}
+.careerContainer .career{
+  padding: 0;
+  max-width: 90%;
+  margin: auto;
+}
+.careerContainer .career h1,
+.careerContainer .career .imgContainer{
+  height: unset;
+}
+.careerContainer .career .job{
+  padding: 1rem 0.8rem;
+  width: 100%;
+}
+.careerContainer .first .job{
+  width: 100%;
+}
+.careerContainer .first .imgContainer {
+  width: 100%;
+}
+.careerContainer .first .job h1 {
+  font-size: 1.5rem;
+}
+.careerContainer .first .job .button{
+  width: 100%;
+}
+}

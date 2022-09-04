@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Raleway&family=Rubik&display=swap');
+
+
+/* SASS Template */
+@import './includes/resets';
+@import './includes/font';
+@import './includes/variables';
+@import './includes/global';
+@import './includes/typography';
+@import './includes/color';
+
+/* Page Templates */
+@import './includes/header';
+@import './includes/home';
+@import './includes/hero';
+@import './includes/shapes';
+@import './includes/sections';
+
+@import './includes/video';
+@import './includes/cardSection';
+// @import './includes/belowCard';
+@import './includes/sliderSection';
+@import './includes/joinUs';
+// @import './includes/footer-before';
+ @import './includes/extras';
+
+@import './includes/demo';
+@import './includes/footer';
+
+/* MOBILE TEMPLATES */
+@import './includes/mobile'

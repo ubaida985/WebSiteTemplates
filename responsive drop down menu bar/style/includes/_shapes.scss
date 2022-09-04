@@ -1,0 +1,29 @@
+/* START OF CIRCLE FILE TEMPLATE */
+
+//circle
+.circle{
+    background-color: $colorSecondary;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10%;
+    top: 96vh;
+}
+
+
+//hollow rectangle
+.rectangle{
+    border: 3px solid $colorSecondary;
+    height: 25px;
+    width: 100px;
+    border-radius: 50px;
+    position: absolute;
+    left: 10%;
+    top: 196vh;
+}
+.center{
+    position: inherit;
+    margin: auto;
+    margin-bottom: 3rem;
+}

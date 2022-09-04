@@ -1,0 +1,83 @@
+.btnPrimary{
+    background-color: $colorButtons;
+    border: none;
+    width: 150px;
+    height: 48px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: $fontBostonSemi;
+    border-radius: 5px;
+    color: $colorPrimary;
+    transition: 0.3s; 
+    &:hover{
+        background-color: transparent;
+        border: 3px solid $colorButtons;
+        a{
+            color: $colorButtons
+        }
+    }
+}
+
+.btnHeader{
+    background-color: $colorButtons;
+    border: none;
+    width: 150px;
+    height: 48px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: $fontBostonSemi;
+    border-radius: 5px;
+    color: $colorPrimary;
+}
+
+.btnSecondary{
+    @extend .btnPrimary;
+    background-color: $colorPrimary;
+    a{
+        color: $colorWhite;
+        text-decoration: none;
+    }
+}
+.btnSecondary:hover{
+    background-color: transparent;
+    border: 2px solid $colorPrimary;
+    a{
+        color: $colorPrimary;
+    }
+}
+
+.scrolled{
+    background-color: $colorPrimary;
+    #menuIcon div{
+        background-color: $colorWhite!important;
+    }
+   li:not(.btn) a{
+       color: white!important;
+   }
+    
+}
+
+.otherScrolled{
+    background-color: $colorPrimary;
+    #menuIcon div{
+        background-color: $colorWhite!important;
+    }
+   li:not(.btn) a{
+       color: white!important;
+   }
+    
+}
+
+.btnThird{
+    border: 2px solid #F96E46;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: $fontBostonSemi;
+    background-color: transparent;
+    padding: 1.5rem 2.5rem;
+    transition: 0.4s;
+}
+.btnThird:hover{
+    background-color: #F96E46;
+}

@@ -1,0 +1,227 @@
+@font-face {
+  font-family: Neogrotesk Ess Alt;
+  src: url("../font/NeogroteskEssAlt-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: Boston-SemiBold;
+  src: url("../font/Boston-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: Neogrotesk Ess Alt Bold;
+  src: url("../font/NeogroteskEssAlt-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: Boston-Regular;
+  src: url("../font/Boston-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: Neogrotesk Ess Alt Light;
+  src: url("../font/NeogroteskEssAlt-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: Boston-Bold;
+  src: url("../font/Boston-Bold.woff");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body#overRide .upperContainer {
+  background: url('../img/banner.png'), #fff;
+  margin-top: 6rem;
+  background-size: 90%;
+  background-position: 65%;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+
+body#overRide .upperContainer .upperText {
+  color: #39a2db;
+  z-index: 99;
+  word-spacing: 25rem;
+  text-align: center;
+  padding: 8rem 0;
+  font-family: Neogrotesk Ess Alt Light;
+}
+body#overRide .upperContainer .upperText h1{
+  font-size: 5rem;
+}
+body#overRide .upperContainer .upperText span {
+  -webkit-text-fill-color: white;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke: 1.5px #1f64a7;
+  font-family: Boston-SemiBold;
+}
+
+body#overRide section#main {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+body#overRide .heroCard{
+  width: 80%;
+  display: grid;
+  margin: auto;
+  margin-top: 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+body#overRide .heroCard .heroText{
+    padding-left: 10%;
+    margin: auto;
+}
+body#overRide .heroCard .heroText h1{
+  font-family: Neogrotesk Ess Alt Light;
+  font-size: 3rem;
+  color: #043b81 ;
+}
+body#overRide .heroCard .heroImage{
+}
+body#overRide .heroCard .heroImage img{
+  width: 100%;
+}
+
+body#overRide section#main .card {
+  border: none;
+  margin: 2rem auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+body#overRide .card .cardContent {
+  margin: auto;
+  width: 50%;
+}
+
+body#overRide .card .imgContainer {
+  width: 40%;
+  margin: auto;
+}
+
+body#overRide .imgContainer img {
+  width: 100%;
+}
+
+body#overRide .card .cardContent ul.dashed {
+  margin: 0;
+  list-style-type: none;
+}
+
+body#overRide ul.dashed>li {
+  text-indent: -30px;
+}
+
+body#overRide ul.dashed>li:before {
+  content: '';
+  margin-right: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+  width: 20px;
+  height: 3px;
+  background-color: #f96e46;
+  text-indent: -5px;
+}
+
+body#overRide .card .cardContent h1 {
+  width: 80%;
+  line-height: 1.6;
+  font-size: 2rem;
+  color: #043b81;
+  font-family: Neogrotesk Ess Alt;
+}
+
+body#overRide .card .cardContent li {
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  font-family: Boston-Regular;
+}
+
+body#overRide .card .cardContent li a{
+  color: #1f64a7;
+  text-decoration: none;
+  font-family: Boston-Bold;
+}
+
+body#overRide section#main .reverse {
+  flex-direction: row-reverse;
+}
+body#overRide #retailer{
+  margin-left: 8%;
+  text-align: left;
+}
+body#overRide #retailer span{
+  font-size: 8rem;
+  -webkit-text-stroke-width: 1px;
+}
+body#overRide #dtc {
+  margin-left: 5%;
+}
+
+@media screen and (max-width:780px) {
+  
+body#overRide #dtc {
+  margin-left: 0%;
+}
+body#overRide .upperContainer {
+ margin-top: 6rem;
+  background-size: 150%;
+  background-position: 40% 80%;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+
+body#overRide .upperContainer .upperText{
+  color: #39a2db;
+  z-index: 99;
+  word-spacing: 25rem;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 3rem 0;
+}
+body#overRide .upperContainer .upperText h1{
+  font-size: 3rem;
+}
+body#overRide #retailer span{
+  font-size: 4rem;
+  -webkit-text-stroke-width: 1px;  
+}
+
+  body#overRide section#main .card {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: auto;
+  }
+  body#overRide .card .cardContent h1 {
+    font-size: 1.5rem;
+  }
+  body#overRide .card .cardContent li {
+    font-size: 1rem;
+  }
+  body#overRide section#main .card .cardContent {
+    width: 90%;
+    text-align: left;
+  }
+  body#overRide section#main .card .imgContainer {
+    width: 90%;
+  }
+  body#overRide .heroCard{
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  body#overRide .heroCard .heroText{
+    grid-row: 2;
+  }
+  body#overRide .heroCard .heroText h1{
+    font-size: 2rem;
+  }
+}

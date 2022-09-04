@@ -1,0 +1,39 @@
+.demoSection{
+    margin: auto;
+    #mobile{
+        display: none;
+    }
+    .demo{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        font-size: 48px;
+        color: $colorPrimary;
+        font-family: $fontInter;
+        font-weight: 700;
+        p{
+            padding-left: 2rem;
+            margin-right: 4rem;
+            border-left: 10px solid $colorSecondary;
+        }
+        
+    }
+    button{
+        width: 250px;
+        font-size: 24px;
+        height: 91px;
+        a{
+            text-decoration: none;
+            color: $colorPrimary;
+        }
+    }
+    .imgContainer{
+        display: block;
+        text-align: center;
+        margin-top: 3rem;
+        img{
+            max-width: 100%;
+        }   
+    }
+}

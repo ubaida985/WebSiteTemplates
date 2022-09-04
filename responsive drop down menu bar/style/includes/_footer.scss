@@ -1,0 +1,168 @@
+.footer{
+    background-color: $colorPrimary;
+    background-position: bottom right;
+    color: white;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding: 2rem 0;
+    position: relative;
+    .backgroundImage{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        mask-image: linear-gradient(to top left, rgba(0,0,0,1), rgba(0,0,0,0) 80%);
+        img{
+            width: 100%;
+        }
+    }
+    .footerContainer{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 3rem;
+
+        .footerGrid{
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            grid-gap: 2rem;
+        }
+        ul{
+            list-style-type: none;
+            a{
+                color: $colorWhite;
+                text-decoration: none;
+                font-family: $fontBoston;
+            }
+        }
+        .levelOne{
+            .leftLevel{
+                .footerLogo{
+                    a{
+                    }
+                    img{
+                        transform: scale(0.7);
+                    }
+                }
+                .email{
+                    margin-top: 3rem;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-left: 1rem;
+                    i{
+                        font-size: 25px;
+                        padding-right: 1rem ;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: $colorWhite;
+                        font-family: $fontBoston;
+                        p{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+
+            .rightLevel{
+                nav{
+                    ul{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        li{
+                            padding: 0 1rem;
+                            font-size: 14px;
+                            a{
+                                border-top: 2px solid $colorWhite;
+                            }
+                        }
+                        li.superMenu{
+                            ul.subMenu{
+                                margin-top: 5rem;
+                                flex-direction: column;
+                                width: 75px;
+                               li{
+                                   padding: 5px 0;
+                                   font-size: 12px;
+                                   display: block;
+                                   a{
+                                    border-top: none;
+                                   }
+                               } 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .levelTwo{
+            .leftLevel{
+                p{
+                    font-family: $fontBoston;
+                    font-size: 36px;
+                }
+            }
+            .rightLevel{
+                a{
+                    color: $colorWhite;
+                    font-size: 60px;
+                    padding: 0 1rem;
+                    text-decoration: none;
+                    i{
+                    }
+                }
+            }
+        }
+
+        .levelThree{
+            .leftLevel{
+                p{
+                    font-family: $fontBoston;
+                    font-size: 36px;
+                }
+            }
+            .rightLevel{
+                form{
+                    input{
+                        width: 50%;
+                        border: none;
+                        padding: 1rem 2rem;
+                        border-radius: 5px;
+                    }
+                    button{
+                        width: 30%;
+                    }
+                }
+            }
+        }   
+
+        .levelFour{
+            .leftLevel{
+                p{
+                    font-family: $fontBoston;
+                    a{
+                        color: $colorSecondary;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .rightLevel{
+                nav{
+                    ul{
+                        display: flex;
+                        li{
+                            padding: 0 1rem;
+                            a{
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  height: 126px;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.header .leftHeader {
+  background-color: #022859;
+  width: 145px;
+  height: 126px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0 0 5px 0;
+  z-index: 99;
+}
+
+.header .leftHeader img {
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+}
+
+.header .rightHeader {
+  justify-self: flex-end;
+  width: 90%;
+}
+
+.header .rightHeader ul {
+  list-style-type: none;
+}
+
+.header .rightHeader .outerList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.header .rightHeader .outerList .superMenu {
+  position: relative;
+}
+
+.header .rightHeader .outerList li {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.header .rightHeader .outerList li:hover {
+  background-color: #022859;
+  border-radius: 10px;
+}
+
+.header .rightHeader .outerList li:hover a {
+  color: white;
+}
+
+.header .rightHeader .outerList li a {
+  color: #022859;
+  text-decoration: none;
+}
+
+.header .rightHeader .outerList li nav {
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 715px;
+  height: 436px;
+  background-color: #022859;
+  padding: 4rem;
+  border-radius: 10px;
+  top: 85%;
+  left: -100%;
+  display: none;
+}
+
+.header .rightHeader .outerList li nav div .menuHeading {
+  width: 60%;
+  text-transform: uppercase;
+  border-bottom: 1px solid white;
+}
+
+.header .rightHeader .outerList li nav div .menuHeading p {
+  color: white;
+  font-size: 12px;
+  width: 120%;
+}
+
+.header .rightHeader .outerList li nav div .domainMenu li {
+  text-transform: none;
+  padding: 1rem 0;
+}
+
+.header .rightHeader .outerList li nav div .domainMenu li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.header .rightHeader .outerList li nav div .domainMenu li a img {
+  padding-right: 1rem;
+}
+
+.header .rightHeader .outerList li nav .leftNav::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 42%;
+  height: 80%;
+  width: 1px;
+  z-index: 1000;
+  background-color: white;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.header .rightHeader .outerList .superMenu:hover nav {
+  display: -ms-grid;
+  display: grid;
+}
+
+.header #menuIcon {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

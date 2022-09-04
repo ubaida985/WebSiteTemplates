@@ -1,0 +1,56 @@
+
+/*------------------------- VIDEO SECTION STARTS -------------------------------*/
+ .video-section {
+    width: 70%;
+    padding-bottom: 4rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+   .video-content {
+    margin: auto;
+    font-size: 36px;
+    color: #0d4162;  
+    font-family: Neogrotesk Ess Alt Light;
+  
+  }
+  iframe{
+    z-index: 99;
+  }
+   .caps {
+    font-weight: 800;
+  }
+   .video {
+    margin: auto;
+    position: relative;
+
+  }
+   .video img {
+    position: absolute;
+    bottom: 10%;
+    left: -10%;
+    z-index:0;
+  }
+  iframe.inner {
+    width: 534px;
+    height: 377px;
+    border-radius: 30px;
+    margin-top: 56px;
+  }
+  .frame {
+    width: 100%;
+    height: 100%;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 560%;
+    height: 315px;
+    cursor: pointer;
+  }
+  
+  /*------------------------- VIDEO SECTION STARTS -------------------------------*/
+  
+  

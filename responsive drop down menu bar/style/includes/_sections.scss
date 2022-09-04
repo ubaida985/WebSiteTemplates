@@ -1,0 +1,89 @@
+/* START OF SECTIONS FILE TEMPLATE */
+.mainSection{
+    background-color: $colorBackground;
+    overflow: hidden;
+    .homeSection{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3rem;
+        width: 80%;
+        margin: auto;
+        justify-content: center;
+        padding: 3rem 0;
+        margin-bottom: 3rem;
+        .imgContainer{
+            margin: auto;
+            img{
+                margin: auto;
+                width: 100%;
+                margin-top: -3rem;
+            }
+        }
+        .headingContainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            .heading{
+                margin-bottom: 2rem;
+                h1{
+                    color: $colorPrimary;
+                    position: relative;
+                    font-size: 36px;
+                    font-family: $fontInter;
+                    font-weight: 400;
+                    span.bold{
+                        font-weight: 700;
+                    }
+                    span.stroking{
+                        position: absolute;
+                        left: -16%;
+                        top: -20%;
+                        font-weight: 700;
+                        font-size: 156px;
+                        letter-spacing: 7.8px;
+                        opacity: 0.2;
+                        color: $colorStroke;
+                        -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+                        -webkit-text-stroke-width: 1px;
+                        -webkit-text-stroke-color: $colorStroke;
+                    }
+                }
+            }
+        }
+        .paraContainer{
+            background-color: $colorLighter;
+            padding: 3rem 0rem;
+            border-radius: 17px;
+            p{
+                font-family: $fontInter;
+                font-weight: 400;
+                font-size: 20px;
+                width: 70%;
+                margin: auto;
+            }
+        }
+        .darkerColor{
+            background-color: $colorDarker;
+        }
+    }
+    .left{
+        .headingContainer{
+            .heading{
+                h1{
+                    span.bold{
+
+                    }
+                    span.stroking{
+                        top: -80%;
+                        left: -20%;
+                    }
+                }
+            }
+        }
+    }
+    #three{
+        top: -75%;
+        left: -12%;
+    }
+}
